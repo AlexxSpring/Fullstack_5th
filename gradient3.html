@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gradient Border</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background: #292929;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 250px;
+            height: 370px;
+
+            background: #333333;
+
+            border-radius: 12px;
+
+            position: relative;
+        }
+
+        /* Gradient border */
+        .box::before {
+            content: "";
+
+            position: absolute;
+
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+
+            border-radius: 15px;
+
+            background: conic-gradient(
+                from 180deg,
+
+                yellow 0%,
+                yellow 15%,
+
+                blue 35%,
+                blue 55%,
+
+                red 75%,
+                red 90%,
+
+                yellow 100%
+            );
+
+            z-index: -1;
+        }
+
+        /* Glow */
+        .box::after {
+            content: "";
+
+            position: absolute;
+
+            top: -7px;
+            left: -7px;
+            right: -7px;
+            bottom: -7px;
+
+            border-radius: 18px;
+
+            background: conic-gradient(
+                from 180deg,
+
+                yellow 0%,
+                yellow 15%,
+
+                blue 35%,
+                blue 55%,
+
+                red 75%,
+                red 90%,
+
+                yellow 100%
+            );
+
+            filter: blur(10px);
+
+            opacity: 0.35;
+
+            z-index: -2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>
