@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title>
+
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+    }
+
+    .clock {
+      width: 370px;
+      height: 370px;
+      border-radius: 50%;
+
+      /* Blue arc + dark remaining part */
+      background: conic-gradient(
+        from -5deg,
+        #287cff 0deg 245deg,
+        #242424 245deg 355deg,
+        #287cff 355deg 360deg
+      );
+
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Makes the ring hollow */
+    /* .clock::before {
+      content: "";
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      background: #111;
+    } */
+
+    .time {
+      position: relative;
+      color: #287cff;
+      font-family: monospace;
+      font-size: 52px;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="clock">
+    <div class="time">12:04</div>
+  </div>
+
+</body>
+</html>
