@@ -8,7 +8,7 @@
         *{
             margin:0;
             padding:0;
-            color:blue;
+            color: black;
         }
 
         #myID{
@@ -31,10 +31,27 @@
             color: purple;
         }
 
+        ul>li.myClass>span{
+            background-color: black;
+            color: white;
+        }
+
+        h3, p{
+            color: blueviolet;
+        }
+
     </style>
 </head>
 <body>
-    <h2>Selectors</h2>
+
+    <div>
+        <h3>Heading</h3>
+        <p>para1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae delectus rerum beatae quisquam deleniti, quam veniam dolorum tenetur iste dolorem?</p>
+        <p>para2: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae nesciunt id modi porro, veritatis atque laboriosam incidunt illum ea vero quod velit accusamus, quos quisquam possimus! Libero officiis quod nemo. Harum, a totam.
+        </p>
+    </div>
+
+    <h2 style="color: black">Selectors</h2>
     <ul>
         <li class="myClass">Universal</li>
         <li id="myID">ID</li>
