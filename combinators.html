@@ -55,8 +55,18 @@
         }
 
         input:checked{
-            color:blue;
+            accent-color: purple; 
             box-shadow: 1px 1px 5px black
+        }
+
+        li:nth-child(odd){
+            background-color: yellow
+        }
+        li:nth-child(even){
+            background-color: purple;
+        }
+        li:nth-child(5n){
+            background-color: red;
         }
 
     </style>
@@ -75,11 +85,25 @@
     <p>Para3</p>
     <p class="para" id="mypara" style="color: grey!important">HelloWorld</p>
 
-    <button>
-        Click Me!
-    </button>
-    <a href="#">LINK</a>
-    <input type="checkbox" checked/>
-    <input type="checkbox">
+    <section>
+
+        <button>Click Me!</button>
+        <a href="#">LINK</a>
+        <input type="checkbox" checked/>
+        <input type="checkbox">
+        
+    </section>
+
+    <section>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+        </ul>
+    </section>
 </body>
 </html>
