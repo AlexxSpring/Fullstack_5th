@@ -3,31 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 300px;
+            height: 500px;
+            margin: auto;
+            background-color: beige;
+        }
+
+        #box1{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 20px 20px;
+        }
+
+        .fields{
+            margin: auto;
+        }
+
+        input{
+            margin: auto;
+        }
+
+
+    </style>
 </head>
 <body>
-    <div class="container" id="center">
-        <h1>My page</h1>
-    </div>
 
-    <div class="container" id="center">
-        <p> Task 1 : Center a login Card</p>
-    </div>
+    <div class="container">
+        <div id="box1">
 
-    <div class="form" id="center">
-        <form>
-            <h3 id="center">login</h3>
+            <h2>Login</h2>
+            
+            <label for="username" id="username" class="fields">Username : </label>
+            <input type="text" required>
             <br>
-            <label for="username">Username: </label>
-            <input type="text" id="username" name="username" required>
+            <label for="password" id="password" class="fields">Password : </label>
+            <input type="password" required>
             <br>
-            <br>
-            <label for="password">Password: </label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <button type="submit" id="center"></button>
-        </form>
+            <button type="submit">LOGIN</button>
+        </div>
+
     </div>
 </body>
 </html>
