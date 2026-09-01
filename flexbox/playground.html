@@ -10,13 +10,14 @@
             display: flex;
             flex-direction: row;
             outline: 3px solid black;
-            height: 97vh;
+            /* height: 97vh; */
             justify-content: space-around;
             align-items: center;
         }
 
         .container>div{
             color: black;
+            height: 100px;
         }
 
         .box{
@@ -29,13 +30,16 @@
 
         #box1{
             background-color: green;
-            flex-basis: 150px;
+            flex-grow: 2;
         }
         #box2{
             background-color: pink;
+            flex-grow: 1;
+
         }
         #box3{
             background-color: purple;
+            flex-grow: 3;
         }
     </style>
 
