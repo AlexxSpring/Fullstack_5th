@@ -8,18 +8,28 @@
     <style>
         .container{
             display: flex;
+            flex-direction: row;
+            outline: 3px solid black;
             height: 97vh;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .container>div{
+            color: black;
+        }
+
+        .box{
+            display: flex;
+            height: 100px;
+            width: 100px;
             justify-content: center;
             align-items: center;
         }
 
-        .box{
-            height: 100px;
-            width: 100px;
-        }
-
         #box1{
             background-color: green;
+            flex-basis: 150px;
         }
         #box2{
             background-color: pink;
