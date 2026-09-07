@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            height: 90vh;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-areas:
+            "box1 box1 box1"
+            "box2 box3 box3"
+            "box2 box4 box5"
+            "box6 box6 box6";
+
+            gap: 5px;
+
+
+        }
+
+        .container>div{
+            outline: 1px solid black;
+            outline-style: auto;
+        }
+
+
+        .container>div:nth-child(1){
+            background-color: lightblue;
+        }
+        .container>div:nth-child(2){
+            background-color: lightgreen;
+        }
+        .container>div:nth-child(3){
+            background-color: lightcoral;
+        }
+        .container>div:nth-child(4){
+            background-color: lightpink;
+        }
+        .container>div:nth-child(5){
+            background-color: magenta;
+        }
+        .container>div:nth-child(6){
+            background-color: magenta;
+        }
+
+        #box{
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div style="grid-area:box1"  id="box">Header</div>
+        <div style="grid-area:box2"  id="box">sidebar</div>
+        <div style="grid-area:box3"  id="box">content</div>
+        <div style="grid-area:box4"  id="box">card1</div>
+        <div style="grid-area:box5"  id="box">card2</div>
+        <div style="grid-area:box6"  id="box">Footer</div>
+    </div>
+    
+</body>
+</html>
