@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            height: 90vh;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-areas:
+            "box1 box2 box3 box4"
+            "box5 box6 box7 box8"
+            "box9 box10 box11 box12";
+
+            gap: 5px;
+
+
+        }
+
+        .container>div{
+            outline: 1px solid black;
+            outline-style: auto;
+        }
+
+
+        .container>div:nth-child(1){
+            background-color: lightblue;
+        }
+        .container>div:nth-child(2){
+            background-color: lightgreen;
+        }
+        .container>div:nth-child(3){
+            background-color: lightcoral;
+        }
+        .container>div:nth-child(4){
+            background-color: lightpink;
+        }
+        .container>div:nth-child(5){
+            background-color: magenta;
+        }
+        .container>div:nth-child(6){
+            background-color: magenta;
+        }
+        .container>div:nth-child(7){
+            background-color: magenta;
+        }
+        .container>div:nth-child(8){
+            background-color: magenta;
+        }
+        .container>div:nth-child(9){
+            background-color: magenta;
+        }
+        .container>div:nth-child(10){
+            background-color: magenta;
+        }
+        .container>div:nth-child(11){
+            background-color: magenta;
+        }
+        .container>div:nth-child(12){
+            background-color: magenta;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div style="grid-area:box1"  id="box">1</div>
+        <div style="grid-area:box2"  id="box">2</div>
+        <div style="grid-area:box3"  id="box">3</div>
+        <div style="grid-area:box4"  id="box">4</div>
+        <div style="grid-area:box5"  id="box">5</div>
+        <div style="grid-area:box6"  id="box">6</div>
+        <div style="grid-area:box7"  id="box">7</div>
+        <div style="grid-area:box8"  id="box">8</div>
+        <div style="grid-area:box9"  id="box">9</div>
+        <div style="grid-area:box10"  id="box">10</div>
+        <div style="grid-area:box11"  id="box">11</div>
+        <div style="grid-area:box12"  id="box">12</div>
+    </div>
+    
+</body>
+</html>
