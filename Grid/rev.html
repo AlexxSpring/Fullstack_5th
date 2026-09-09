@@ -8,6 +8,8 @@
     <style>
         .container{
             display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
             outline: 1px solid black;
             height: 500px;
             width: 500px;
@@ -16,6 +18,11 @@
         
         .container>div{
             outline: 1px dashed grey;
+        }
+
+        #box1{
+            grid-column-start: 1;
+            grid-column-end: 3
         }
 
 
