@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root{
+            --primary-color: lightblue;
+            --secondary-color: pink;
+            --tertiary-color: black;
+            --f-size: 30px;
+            --multiplier: 2;
+
+        }
+
+        p{
+            font-size: calc((var(--f-size) - 20px) * var(--multiplier));
+            color: var(--primary-color);
+            background-color: var(--tertiary-color);
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam asperiores tenetur eius quod doloribus voluptas nihil amet nostrum commodi debitis?</p>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, consectetur.</p>
+    </div>
+
+</body>
+</html>
