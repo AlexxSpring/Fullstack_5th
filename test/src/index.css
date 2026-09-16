@@ -3,8 +3,13 @@
 @import "tailwindcss";
 
 
+@theme {
+  --color-coffee: red;
+}
+
+
 .heading{
-    @apply text-3xl font-bold underline text-center bg-blue-900
+    @apply text-3xl font-bold underline text-center bg-coffee;
 }
 
 
