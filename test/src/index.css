@@ -1,0 +1,11 @@
+/* This is the tailwind css file */
+
+@import "tailwindcss";
+
+
+.heading{
+    @apply text-3xl font-bold underline text-center bg-blue-900
+}
+
+
+
