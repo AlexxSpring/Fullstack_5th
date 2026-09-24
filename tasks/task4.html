@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tech Summit 2026</title>
+
+
+    <style>
+
+        /* =========================
+           BASIC RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #172033;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .navbar {
+            background: white;
+            border-bottom: 1px solid #e5eaf0;
+        }
+
+        .nav-container {
+            width: 92%;
+            max-width: 1200px;
+            height: 58px;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            color: #075f52;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .logo-icon {
+            width: 26px;
+            height: 26px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #e7f5f1;
+            border-radius: 50%;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+
+            font-size: 10px;
+        }
+
+        .nav-links a {
+            color: #344054;
+        }
+
+        .register-btn {
+            background: #2563eb;
+            color: white !important;
+
+            padding: 9px 15px;
+            border-radius: 5px;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 20px;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 255px;
+
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            background-image: url("https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1400&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero::before {
+            content: "";
+
+            position: absolute;
+            inset: 0;
+
+            background: rgba(5, 27, 55, 0.65);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+
+            color: white;
+        }
+
+        .hero-tag {
+            display: inline-block;
+
+            background: #2563eb;
+
+            padding: 5px 11px;
+            border-radius: 12px;
+
+            font-size: 9px;
+
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .hero p {
+            font-size: 14px;
+            margin-bottom: 17px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 9px 17px;
+
+            border-radius: 5px;
+
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background: #4938df;
+        }
+
+        .btn-outline {
+            border: 1px solid white;
+        }
+
+
+        /* =========================
+           MOBILE NAVBAR
+        ========================= */
+
+        @media (max-width: 640px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .hero {
+                min-height: 210px;
+            }
+
+            .hero h1 {
+                font-size: 21px;
+            }
+
+            .hero p {
+                font-size: 10px;
+            }
+
+            .btn {
+                font-size: 8px;
+                padding: 8px 12px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    🌐
+                </div>
+
+                <span>
+                    GLA University
+                </span>
+
+            </div>
+
+
+            <nav class="nav-links">
+
+                <a href="#">
+                    Home
+                </a>
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Events
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+                <a href="#" class="register-btn">
+                    Register Now
+                </a>
+
+            </nav>
+
+
+            <div class="menu-icon">
+                ☰
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-tag">
+                Tech • Learn • Connect
+            </div>
+
+            <h1>
+                TECH SUMMIT 2026
+            </h1>
+
+            <p>
+                Innovating the Future of Technology
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#" class="btn btn-primary">
+                    Register Now
+                </a>
+
+                <a href="#schedule" class="btn btn-outline">
+                    View Schedule
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
