@@ -10,4 +10,6 @@ test/node_modules
 test/package-lock.json
 test/package.json
 test/tailwind.config.js
+/tasks.zip
+/mockExam
 
