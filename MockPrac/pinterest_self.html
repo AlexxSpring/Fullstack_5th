@@ -49,9 +49,68 @@
         /* gallery */
 
         .gallery{
+            padding: 20px;
             display: grid;
-            grid-template-columns: repeat( )
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-auto-rows: 10px;
+            gap: 10px;
         }
+
+
+        .card{
+            background: white;
+            border-radius: 8px;
+            grid-row: span 30;
+            overflow: hidden;
+            padding-bottom: 10px;
+        }
+
+        .card.tall{
+            grid-row: span 25;
+        }
+
+        .card.short{
+            grid-row: span 15;
+        }
+
+
+        .pic{
+            width: 100%;
+            min-height: 150px;
+            height: calc(100% - 45px);
+            background: linear-gradient(135deg, grey, black);
+        }
+
+        .card:nth-child(1) .pic{
+            background: linear-graident(135deg, #f5a623, #f76b1c);
+        }
+
+        .card:nth-child(2) .pic{
+            background: linear-gradient(135deg, yellow, orange);
+        }
+
+        .card:nth-child(3) .pic{
+            background: linear-gradient(135deg, #4a90e2, #50e3c2);
+        }
+        .card:nth-child(4) .pic{
+            background: linear-gradient(135deg, #4a9078, #50e392);
+        }
+        .card:nth-child(5) .pic{
+            background: linear-gradient(135deg, #4a44e2, #50e3c2);
+        }
+        .card:nth-child(6) .pic{
+            background: linear-gradient(135deg, #4c90e2, #50e3c2);
+        }
+        .card:nth-child(7) .pic{
+            background: linear-gradient(135deg, #4e90e2, #50e3c2);
+        }
+        .card:nth-child(8) .pic{
+            background: linear-gradient(135deg, #4e90e2, #50e3c2);
+        }
+
+
+        
+
 
 
     </style>
@@ -83,7 +142,7 @@
         <div class="card short">
             <div class="pic"></div>
             <div class="info">
-                <span>BoardName : summerIncarnation</span>
+                <span>BoardName:summerIncarnation</span>
                 <small>@design</small>
             </div>
         </div>
