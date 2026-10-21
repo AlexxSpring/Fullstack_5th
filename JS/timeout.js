@@ -36,3 +36,13 @@ function display(){
     document.getElementById("min").innerHTML = minutes;
     document.getElementById("sec").innerHTML = seconds;
 }
+
+
+
+// MAP function         q
+let arr = [1,2,3,4,5];
+
+// Create an array with squares
+let newArr = arr.map(n => n*n);
+// let newArr = arr.map( (n)=> { return n*n}) this is same as the above line
+console.log(newArr);
