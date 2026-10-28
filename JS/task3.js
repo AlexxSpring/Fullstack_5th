@@ -40,7 +40,7 @@ function showMole() {
 }
 
 
-// Start the game when the start button is clicked, shows score and stuff
+// start button, shows score and stuff
 
 grid.addEventListener("click", function(event) {
     if (event.target.classList.contains("mole")) {
@@ -52,6 +52,46 @@ grid.addEventListener("click", function(event) {
     }
 });
 
+
+
+// Final 
+
+startBtn.addEventListener("click", function() {
+    clearInterval(moleInterval);
+    clearInterval(gameTimer);
+
+    score = 0;
+    timeLeft = 30;
+
+    scoreDisplay.textContent = score;
+    timeDisplay.textContent = timeLeft;
+
+    startBtn.disabled = true;
+
+    showMole();
+
+    // Show a new mole every 800 milliseconds
+    moleInterval = setInterval(showMole, 800);
+
+    // Reduce time every second
+    gameTimer = setInterval(function() {
+        timeLeft--;
+        timeDisplay.textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+            clearInterval(moleInterval);
+            clearInterval(gameTimer);
+
+            document.querySelectorAll(".cell").forEach(function(cell) {
+                cell.classList.remove("mole");
+                cell.textContent = "";
+            });
+
+            startBtn.disabled = false;
+            alert("Game Over! Your score is " + score);
+        }
+    }, 1000);
+});
 
 
 
