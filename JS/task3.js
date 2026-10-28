@@ -40,6 +40,19 @@ function showMole() {
 }
 
 
+// Start the game when the start button is clicked, shows score and stuff
+
+grid.addEventListener("click", function(event) {
+    if (event.target.classList.contains("mole")) {
+        score++;
+        scoreDisplay.textContent = score;
+
+        event.target.classList.remove("mole");
+        event.target.textContent = "";
+    }
+});
+
+
 
 
 
