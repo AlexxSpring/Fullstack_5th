@@ -21,3 +21,25 @@ for (let i = 0; i < 9; i++) {
 }
 
 
+// Mole appears in a random cell every second
+
+
+function showMole() {
+    let cells = document.querySelectorAll(".cell");
+
+    cells.forEach(function(cell) {
+        cell.classList.remove("mole");
+        cell.textContent = "";
+    });
+
+    let randomIndex = Math.floor(Math.random() * 9);
+    let randomCell = cells[randomIndex];
+
+    randomCell.classList.add("mole");
+    randomCell.textContent = "MOLE";
+}
+
+
+
+
+
